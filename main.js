@@ -15,26 +15,25 @@ console.log("hi there")
 
 for (let i = 1; i <= 100; i++) {
 
-    // creo variabile multiplo di 3
-    let fizz = i % 3 === 0
-
-    // creo variabile multiplo di 5
-    let buzz = i % 5 === 0
-
-    // creo variabile multiplo di 3 e di 5
-    let fizz_buzz = i % 3 === 0 && i % 5 === 0
-
     // imposto l'if/else-if/else
-    if (fizz_buzz) {
+
+    if (i % 3 === 0 && i % 5 === 0) {
+        // se il numero è divisibile per 3 e per 5, stamperà FizzBuzz
         console.log("FizzBuzz")
-    } else if (fizz) {
+    } else if (i % 3 === 0) {
+        // se il numero è solo divisibile per 3, stamperà Fizz
         console.log("Fizz")
-    } else if (buzz) {
+    } else if (i % 5 === 0) {
+        // se il numero è solo divisibile per 5, stamperà Buzz
         console.log("Buzz")
     } else {
+        // se il numero non è divisibile nè per 3 nè per 5, stamperà il numero
         console.log(i)
     }
+
 }
+
+
 
 
 
